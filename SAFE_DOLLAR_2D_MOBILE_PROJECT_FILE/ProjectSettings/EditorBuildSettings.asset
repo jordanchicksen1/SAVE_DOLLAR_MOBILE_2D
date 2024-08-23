@@ -8,6 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Connor Scene Things/Start Scene.unity
+    guid: 1ffa9b11256c69d47bfea57e5bd018b4
+  - enabled: 1
+    path: Assets/Scenes/Connor Scene Things/Menu Scene.unity
+    guid: 7a210b6ff93bc2440b3cc89cbe5e562c
+  - enabled: 1
+    path: Assets/Scenes/Connor Scene Things/Connor.unity
+    guid: 94b92dca98621904fab8b9260ccece85
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 41edfc83746d95e439d22678306f3df6, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 6e881490eaafb5740901533e79608bbf, type: 2}
