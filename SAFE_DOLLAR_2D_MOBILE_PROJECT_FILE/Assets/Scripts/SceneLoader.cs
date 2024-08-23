@@ -8,6 +8,15 @@ public class SceneLoader : MonoBehaviour
     public void StartButtonClicked()
     {
         SceneManager.LoadSceneAsync("Menu Scene");
-            
+    }
+
+    public void PlayButtonClicked()
+    {
+        SceneManager.LoadSceneAsync("Connor");
+    }
+
+    public void QuitButtonClicked()
+    {
+        Application.Quit();
     }
 }
