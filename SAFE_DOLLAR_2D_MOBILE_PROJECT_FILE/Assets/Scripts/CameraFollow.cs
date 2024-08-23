@@ -9,6 +9,7 @@ public class CameraFollow : MonoBehaviour
     // this thing position (camera) should be the same as the car position. 
     void LateUpdate()
     {
-        transform.position = thingToFollow.transform.position + new Vector3(0, 1, -10);
+        // Follow the target on the X-axis only
+        transform.position = new Vector3(thingToFollow.transform.position.x, transform.position.y, transform.position.z);
     }
 }
