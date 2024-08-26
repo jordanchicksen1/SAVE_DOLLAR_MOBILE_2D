@@ -22,6 +22,15 @@ public class PlayerContol : MonoBehaviour
     void Update()
     {
         SwipeCheck();
+        if (transform.position.y >= -1 )
+        {
+            transform.position = new Vector2(transform.position.x, -1);
+        }
+        else if (transform.position.y <=-8 )
+        {
+            transform.position = new Vector2(transform.position.x, -8);
+
+        }
     }
 
     void SwipeCheck()
