@@ -273,9 +273,10 @@ GameObject:
   - component: {fileID: 567366432}
   - component: {fileID: 567366431}
   - component: {fileID: 567366433}
+  - component: {fileID: 567366434}
   m_Layer: 0
   m_Name: Alien
-  m_TagString: Untagged
+  m_TagString: Alien
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -361,6 +362,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1121503532}
   speed: 1
+--- !u!58 &567366434
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567366430}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.11783457, y: 0.11783433}
+  serializedVersion: 2
+  m_Radius: 0.9467101
 --- !u!4 &618362220 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8231218614085915907, guid: aac7098441d779643bee91bef42175d7, type: 3}
@@ -467,6 +503,7 @@ GameObject:
   - component: {fileID: 1121503529}
   - component: {fileID: 1121503528}
   - component: {fileID: 1121503533}
+  - component: {fileID: 1121503534}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -617,6 +654,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.01346159}
   serializedVersion: 2
   m_Radius: 0.43696487
+--- !u!114 &1121503534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121503527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 419eaff31973b1546a50ae2532eb8fc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
 --- !u!1001 &1169460032
 PrefabInstance:
   m_ObjectHideFlags: 0
