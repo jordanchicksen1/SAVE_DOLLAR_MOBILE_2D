@@ -1,11 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerHealth : MonoBehaviour
 {
     public float health = 10f;
-      
+    public TextMeshProUGUI healthText;
+
+    private void Start()
+    {
+        UpdateHealthText();
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "explosion")
@@ -13,6 +20,7 @@ public class PlayerHealth : MonoBehaviour
             health--;
             Destroy(other.gameObject);
             print("You Took Damage");
+            UpdateHealthText();
         }
 
         if (other.tag == "Alien")
@@ -29,5 +37,10 @@ public class PlayerHealth : MonoBehaviour
             Destroy(gameObject);
             print("You Died");
         }
+    }
+
+    private void UpdateHealthText()
+    {
+        healthText.text = "Health: " + health.ToString(); 
     }
 }

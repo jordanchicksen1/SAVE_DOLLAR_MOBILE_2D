@@ -8,10 +8,13 @@ public class PlayerContol : MonoBehaviour
     public float verticalSpeed = 5f;
     private Vector2 startTouchPosition, currentTouchPosition;
     private Rigidbody2D rb;
+    public float speedIncreaseInterval = 5f;
+    public float speedIncrement = 10f;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        StartCoroutine(IncreaseSpeedOverTime());
     }
 
     private void FixedUpdate()
@@ -53,6 +56,15 @@ public class PlayerContol : MonoBehaviour
 
                 startTouchPosition = currentTouchPosition;
             }
+        }
+    }
+
+    IEnumerator IncreaseSpeedOverTime()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(speedIncreaseInterval);
+            speed += speedIncrement;
         }
     }
 }
