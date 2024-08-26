@@ -6,6 +6,7 @@ TagManager:
   tags:
   - explosion
   - Alien
+  - coin
   layers:
   - Default
   - TransparentFX
